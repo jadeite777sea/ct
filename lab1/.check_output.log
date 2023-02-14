@@ -1,0 +1,54 @@
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8B4A0+07ECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk..(THU.CST) os is loading ...
+
+Special kernel symbols:
+  entry  0x00100000 (phys)
+  etext  0x00103551 (phys)
+  edata  0x0010fa16 (phys)
+  end    0x00110d08 (phys)
+Kernel executable memory footprint: 68KB
+00007b28 001009a5 00010094 00010094 00007b58 0010008e
+    kern/debug/kdebug.c:306: print_stackframe+21
+00007b38 00100cc0 00000000 00000000 00000000 00007ba8
+    kern/debug/kmonitor.c:125: mon_backtrace+10
+00007b58 0010008e 00000000 00007b80 ffff0000 00007b84
+    kern/init/init.c:48: grade_backtrace2+33
+00007b78 001000bc 00000000 ffff0000 00007ba4 00000029
+    kern/init/init.c:53: grade_backtrace1+40
+00007b98 001000dc 00000000 00100000 ffff0000 0000001d
+    kern/init/init.c:58: grade_backtrace0+23
+00007bb8 00100104 0010357c 00103560 000012f2 00000000
+    kern/init/init.c:63: grade_backtrace+34
+00007be8 00100051 00000000 00000000 00000000 00007c4f
+    kern/init/init.c:28: kern_init+80
+00007bf8 00007d72 c031fcfa c08ed88e 64e4d08e fa7502a8
+    <unknow>: -- 0x00007d71 --
+++ setup timer interrupts
+100 ticks
+End of Test.
+kernel panic at kern/trap/trap.c:18:
+    EOT: kernel seems ok.
+stack trackback:
+00007ad0 001009a5 00103828 00007b14 00000012 00007b4c
+    kern/debug/kdebug.c:306: print_stackframe+21
+00007b00 00100d31 001038ce 00000012 001038b8 00000008
+    kern/debug/panic.c:27: __panic+103
+00007b20 001018e0 00007b58 00100319 001002c8 00007b4c
+    kern/trap/trap.c:0: print_ticks+65
+00007b50 00101d95 00007b7c 0010033e 00103858 00007b94
+    kern/trap/trap.c:169: trap_dispatch+141
+00007b70 00101e51 00007b7c 00000000 00010094 00007be8
+    kern/trap/trap.c:206: trap+16
+00007be8 00101e6c 00000000 00000000 00000000 00007c4f
+    kern/trap/trapentry.S:24: <unknown>+0
+00007bf8 00007d72 c031fcfa c08ed88e 64e4d08e fa7502a8
+    <unknow>: -- 0x00007d71 --
+Welcome to the kernel debug monitor!!
+Type 'help' for a list of commands.
+K> 
